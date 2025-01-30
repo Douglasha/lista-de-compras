@@ -123,6 +123,8 @@ h1{
 
 .list{
   display: flex;
+  flex-direction: column;
+  gap: 12px;
   width: 627px;
   height: auto;
   /* border: 1px solid black; */
@@ -137,9 +139,32 @@ h1{
     background-color: var(--background-secondary);
     border-radius: 12px;
 
+    .checkbox-image{
+      position: relative;
+      margin-left: 12px;
+      flex: 0 0 17px;
+      width: 16px;
+      height: 17px;
+      background-image: url(../assetis/checkbox-defaut.svg);
+      
+
+      &:hover, &:focus-within{
+        background-image: url(../assetis/checkbox-hover.svg);
+      }
+
+      &:has(:checked){
+        background-image: url(../assetis/checkbox-checked.svg);
+      }
+      
+      & [type="checkbox"] {
+        all: unset;
+        position: absolute;
+        inset: 0;
+      }
+    }
+
     span{
       width: 531px;
-      height: 24px;
       font:var(--paragraph);
       color: var(--content-secondary);
     }
