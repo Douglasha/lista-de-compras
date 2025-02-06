@@ -25,27 +25,31 @@
 
     <h1>Compras da semana</h1>
 
-    <form class="add-item">
+    <form class="add-item" id="item-form">
         <div class="area-input">
             
         </div>
-        <input 
+        <input
+        id="add-item" 
         type="text"
         name="add-item"
         required
         placeholder="Adicione um novo item">
         
         <div class="area-button">
-            <button></button>
+            <button type="submit"></button>
             <span>Adicionar item</span>
         </div>
     </form>
-    <div class="list">
+    <div class="list hidden">
         <div class="itens">
             <div class="checkbox-image">
-                <input type="checkbox" name="" id="">
+                <input 
+                    type="checkbox" 
+                    name="" 
+                    id="">
             </div>
-            <span>Feijao</span>
+            <span id="colocar-item"></span>
             <div class="lixeira">
                 <img src="./assetis/lixeira.svg" alt="">
 
