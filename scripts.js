@@ -39,4 +39,9 @@ document.getElementById('item-form').addEventListener('submit', function(event) 
   document.querySelector('.list').classList.remove('hidden');
 });
 
+const deleteItens = document.getElementById('delete').addEventListener('click', function() {
+  console.log('Botão delete foi clicado');
+});
+
+
 
